@@ -19,3 +19,6 @@ two graphs, discrete and continuous of n
 \description{
 ntickets_fun
 }
+\examples{
+ntickets()
+}

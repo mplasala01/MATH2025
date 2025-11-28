@@ -13,6 +13,12 @@ myf(y, r, p)
 
 \item{p}{Probability of success in each trial (0 < p < 1)}
 }
+\value{
+Percentage event could happen
+}
 \description{
 myf
+}
+\examples{
+myf(20, 3, 0.4)
 }

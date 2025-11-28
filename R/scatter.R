@@ -6,7 +6,7 @@
 #' @param ylab y label
 #' @importFrom graphics barplot hist layout mtext par
 #'
-#' @returns
+#' @returns a scatter plot with marginal histograms
 #'
 #' @export
 #'

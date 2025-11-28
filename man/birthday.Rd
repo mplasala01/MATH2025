@@ -7,11 +7,14 @@
 birthday(k)
 }
 \arguments{
-\item{k}{}
+\item{k}{the number of people in the room}
 }
 \value{
 Probability
 }
 \description{
 birthday function
+}
+\examples{
+birthday(20)
 }

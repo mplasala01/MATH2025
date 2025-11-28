@@ -25,3 +25,6 @@ a histogram of the chosen statistic with confidence intervals
 \description{
 myboot2
 }
+\examples{
+\dontrun{myboot2(x)}
+}

@@ -15,6 +15,9 @@ scatterhist(x, y, xlab = "", ylab = "")
 
 \item{ylab}{y label}
 }
+\value{
+a scatter plot with marginal histograms
+}
 \description{
 A scatter plot with marginal histograms
 }

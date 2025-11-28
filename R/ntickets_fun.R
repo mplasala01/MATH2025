@@ -7,7 +7,7 @@
 #' @returns two graphs, discrete and continuous of n
 #' @export
 #'
-#' @examples
+#' @examples ntickets()
 ntickets <- function(N = 400, g = 0.02, p = 0.95){
   par(mfrow = c(1, 2))
   # Find discrete value

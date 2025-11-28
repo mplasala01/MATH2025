@@ -13,6 +13,12 @@ myncurve(mu, sigma, a)
 
 \item{a}{stopping point}
 }
+\value{
+a plot of the function
+}
 \description{
 myncurve
+}
+\examples{
+myncurve(2, 3, 6)
 }

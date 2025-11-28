@@ -4,10 +4,10 @@
 #' @param sigma standard deviation of the normal distribution
 #' @param a stopping point
 #'
-#' @returns
+#' @returns a plot of the function
 #' @export
 #'
-#' @examples
+#' @examples myncurve(2, 3, 6)
 myncurve = function(mu, sigma, a){
   curve(dnorm(x,mean=mu,sd=sigma), xlim = c(mu-3*sigma, mu + 3*sigma))
   list(mu = mu, sigma = sigma)
