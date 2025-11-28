@@ -1,0 +1,60 @@
+---
+title: "Birthday Function"
+author: "Michael LaSala"
+date: "2025-10-01"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{birthday}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(MATH2025)
+```
+
+There are k people in a room.
+
+
+The probability that no one shares a birthday is :
+ $q(k) = \frac{365}{365} \times \frac{364}{365}  \times \frac{363}{365} \times \frac{362}{365} \times ...\frac{365 - k +1}{365}$
+
+Rewrite it:
+
+$q(k) = \frac{1}{365^k} \frac{365!}{(365-k)!}$
+ 
+ 
+Multiply by 1
+
+$q(k) = \frac{1}{365^k} \frac{k!}{k!}\frac{365!}{(365-k)!}$
+
+
+$q(k) = \frac{k!}{365^k} \frac{365!}{(365-k)!}$
+
+
+Therefore, the chance that at least 2 people share the same birthday is:
+
+
+$p(k) = 1 - q(k)$
+
+$p(k) = 1 - \frac{k!}{365^k} \frac{365!}{(365-k)!}$
+
+
+
+```{r}
+k=22
+p_k = 1- exp(lfactorial(k)+lchoose(365,k) - k*log(365))
+p_k
+
+```
+```{r}
+birthday(k=20:25)
+
+```
